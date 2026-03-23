@@ -1,13 +1,19 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.Properties;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float jumpforce = 5f;
+
+
     Rigidbody2D rb2d;
     Vector2 moveInput;
     Animator animator;
+    CapsuleCollider2D capsuleCollider2D;
 
     bool playerHasHorizontalSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        capsuleCollider2D = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -46,5 +53,17 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rb2d.linearVelocity.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
+    }
+
+    void OnJump(InputValue value)
+    {
+        if (!capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) return;
+        /*if player isnt touching ground then skip below*/
+
+        if (value.isPressed)
+        {
+            rb2d.linearVelocity += new Vector2(0f, jumpforce);
+        }
+        
     }
 }
