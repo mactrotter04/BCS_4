@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2bb33cb433f5c6f4488d6bf60c7d2f9d
+guid: c5ab7fb5a1389ff448b06575c4edaac1
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -87,7 +87,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639098778125353485
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,7 +127,112 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: mushrooms_pixel
+  - name: Frame_0
+    originalName: 
+    pivot: {x: 0.5555555, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 34
+      y: 85
+      width: 18
+      height: 32
+    spriteID: fb7834ce300de35499bf1e04c03f7a3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 34, y: 85}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.5555555, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 34
+      y: 125
+      width: 18
+      height: 32
+    spriteID: 19d1ba9ecd7e3994ea1cdb775e5d41a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 34, y: 125}
+  - name: Frame_2
+    originalName: 
+    pivot: {x: 0.5555555, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 34
+      y: 165
+      width: 18
+      height: 32
+    spriteID: 7abc84d0c02205e40a0a4a0f3134ca2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 34, y: 165}
+  - name: Frame_3
+    originalName: 
+    pivot: {x: 0.55, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 34
+      y: 4
+      width: 20
+      height: 33
+    spriteID: 850bbc30ae2659047927c8131b91c0bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 34, y: 4}
+  - name: Frame_4
+    originalName: 
+    pivot: {x: 0.52380955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 205
+      width: 21
+      height: 33
+    spriteID: ac836d479c088b04c82eb19437959153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 205}
+  - name: Frame_5
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -137,9 +242,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 62
-      height: 62
-    spriteID: 0a735f30abfd6c0468e4971f5ef17317
+      width: 22
+      height: 33
+    spriteID: f909f6007ee5cf14e9e54471fa7ff5be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,20 +253,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData:
-  - name: mushrooms_pixel_0
+  - name: Frame_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 3
-      y: 52
-      width: 16
-      height: 16
-    spriteID: 4e83572c139a5664e8c7c97cdd3a90b7
+      x: 4
+      y: 45
+      width: 22
+      height: 32
+    spriteID: f30e957fcf75b4c42a12c00908596169
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -169,20 +273,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_1
+    uvTransform: {x: 4, y: 45}
+  - name: Frame_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 19
-      y: 52
-      width: 16
-      height: 16
-    spriteID: e200b31c53137034fa035da9e355f441
+      x: 4
+      y: 85
+      width: 22
+      height: 32
+    spriteID: d7839a3eb30f3004b958340cb313deb8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,20 +294,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_2
+    uvTransform: {x: 4, y: 85}
+  - name: Frame_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 35
-      y: 52
-      width: 16
-      height: 16
-    spriteID: 59ac1d2a199aa3f42b7e39f133703a58
+      x: 4
+      y: 125
+      width: 22
+      height: 32
+    spriteID: 95708d7ac334745429d1bb7587dbfbe2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -211,20 +315,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_3
+    uvTransform: {x: 4, y: 125}
+  - name: Frame_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 51
-      y: 52
-      width: 16
-      height: 16
-    spriteID: 3e7e49640505b75488f268f1ada39094
+      x: 4
+      y: 165
+      width: 22
+      height: 32
+    spriteID: bbe7bc2b10732a2469952daaa338848a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,20 +336,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_4
+    uvTransform: {x: 4, y: 165}
+  - name: Frame_10
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 3
-      y: 36
-      width: 16
-      height: 16
-    spriteID: 3de8abd1aba3a3243aea821a26560bdd
+      x: 34
+      y: 45
+      width: 20
+      height: 32
+    spriteID: 8698672bee4aa2044bdb6ee9774043a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -253,20 +357,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_5
+    uvTransform: {x: 34, y: 45}
+  - name: Frame_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 19
-      y: 36
-      width: 16
-      height: 16
-    spriteID: c672ccc7f79372c4b85ab519eeb502ca
+      x: 34
+      y: 205
+      width: 18
+      height: 32
+    spriteID: 4937dd6508e4f6b46a25f749944fcdd6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -274,185 +378,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_6
+    uvTransform: {x: 34, y: 205}
+  - name: Frame_12
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 35
-      y: 36
-      width: 16
-      height: 16
-    spriteID: 512249f8b1015ef4a8c719147826d851
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_7
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 51
-      y: 36
-      width: 16
-      height: 16
-    spriteID: 68cec9b5a0a66ed4d9387e118238404c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_8
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 3
-      y: 20
-      width: 16
-      height: 16
-    spriteID: 274128d9238a3bc4cae2d62de4da8e7b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_9
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 19
-      y: 20
-      width: 16
-      height: 16
-    spriteID: b16c5bfeec14a1e48bb24c08ce610170
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_10
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 35
-      y: 20
-      width: 16
-      height: 16
-    spriteID: 78a0478c55c965e468eb7cfe520caad0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_11
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 51
-      y: 20
-      width: 16
-      height: 16
-    spriteID: f7b61c46a796af34e842c549d0f8a0c8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_12
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 3
+      x: 62
       y: 4
-      width: 16
-      height: 16
-    spriteID: 414b1fcb795bc62478d0fcb95219447a
-    spriteBone: []
-    spriteOutline:
-    - outline:
-      - {x: 3, y: -2}
-      - {x: 7, y: 1}
-      - {x: 3, y: 6}
-      - {x: -3, y: 6}
-      - {x: -7, y: 1}
-      - {x: -4, y: -2}
-      - {x: -3, y: -8}
-      - {x: 2, y: -8}
-    vertices: []
-    spritePhysicsOutline:
-    - outline:
-      - {x: 3, y: -2}
-      - {x: 7, y: 1}
-      - {x: 3, y: 6}
-      - {x: -3, y: 6}
-      - {x: -7, y: 1}
-      - {x: -4, y: -2}
-      - {x: -3, y: -8}
-      - {x: 2, y: -8}
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_13
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 19
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 238405682ab76ef4e95b1b46d93fb017
+      width: 17
+      height: 32
+    spriteID: 0a119a50d8a878b46870ee90b664a669
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -460,116 +399,147 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_14
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 35
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 2fcbc6739090bde4a9e512e42b21113c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: mushrooms_pixel_15
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 51
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 0dfb4d4d9e9237e4c8ae7c0c1c8cc54b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: 62, y: 4}
+  spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 625903230
+      value0: 2784517090
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: mushrooms_pixel
+    name: Skeleton Walk
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: mushrooms_pixel
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 1
         y: 0
-        width: 62
-        height: 62
-      spriteId: 0a735f30abfd6c0468e4971f5ef17317
+        width: 18
+        height: 32
+      spriteId: fb7834ce300de35499bf1e04c03f7a3c
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 19d1ba9ecd7e3994ea1cdb775e5d41a1
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 7abc84d0c02205e40a0a4a0f3134ca2a
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 20
+        height: 33
+      spriteId: 850bbc30ae2659047927c8131b91c0bc
+    - name: Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 21
+        height: 33
+      spriteId: ac836d479c088b04c82eb19437959153
+    - name: Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 22
+        height: 33
+      spriteId: f909f6007ee5cf14e9e54471fa7ff5be
+    - name: Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 22
+        height: 32
+      spriteId: f30e957fcf75b4c42a12c00908596169
+    - name: Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 22
+        height: 32
+      spriteId: d7839a3eb30f3004b958340cb313deb8
+    - name: Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 22
+        height: 32
+      spriteId: 95708d7ac334745429d1bb7587dbfbe2
+    - name: Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 22
+        height: 32
+      spriteId: bbe7bc2b10732a2469952daaa338848a
+    - name: Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 20
+        height: 32
+      spriteId: 8698672bee4aa2044bdb6ee9774043a4
+    - name: Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 4937dd6508e4f6b46a25f749944fcdd6
+    - name: Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 17
+        height: 32
+      spriteId: 0a119a50d8a878b46870ee90b664a669
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
-  previousTextureSize: {x: 128, y: 128}
+  canvasSize: {x: 22, y: 33}
+  previousTextureSize: {x: 128, y: 256}

@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Ground
   - Background
-  - 
-  - 
+  - Bouncy
+  - Enimeies
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: World
     uniqueID: 4133512449
+    locked: 0
+  - name: Enimie
+    uniqueID: 2485402663
     locked: 0
   - name: Player
     uniqueID: 4292381621

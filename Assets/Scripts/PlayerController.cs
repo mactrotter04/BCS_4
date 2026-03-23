@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     CapsuleCollider2D capsuleCollider2D;
 
     bool playerHasHorizontalSpeed;
+    bool isAlive = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,14 +29,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isAlive) return;
         Walk();
         FlipSprite();
+        Death();
     }
 
     void OnMove(InputValue value)
     {
+        if (!isAlive) return;
         moveInput = value.Get<Vector2>();
-        Debug.Log(moveInput);
     }
 
     void Walk()
@@ -57,6 +61,8 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputValue value)
     {
+        if (!isAlive) return;
+        
         if (!capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) return;
         /*if player isnt touching ground then skip below*/
 
@@ -65,5 +71,15 @@ public class PlayerController : MonoBehaviour
             rb2d.linearVelocity += new Vector2(0f, jumpforce);
         }
         
+    }
+
+    void Death()
+    {
+        if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enimeies")))
+        {
+            isAlive = false;
+            animator.SetTrigger("Death");
+            rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
     }
 }
