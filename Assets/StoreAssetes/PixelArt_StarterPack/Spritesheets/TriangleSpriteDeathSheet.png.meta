@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 6e1462168d34d1f49929b259af4045e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9112725334549896446
+    second: TriangleSpriteDeathSheet_0
+  - first:
+      213: -8092276608898093193
+    second: TriangleSpriteDeathSheet_1
+  - first:
+      213: 416675484119109642
+    second: TriangleSpriteDeathSheet_2
+  - first:
+      213: 1125539181697870354
+    second: TriangleSpriteDeathSheet_3
+  - first:
+      213: 2736442760620898068
+    second: TriangleSpriteDeathSheet_4
+  - first:
+      213: 1016087696289863807
+    second: TriangleSpriteDeathSheet_5
+  - first:
+      213: -8001855794629835853
+    second: TriangleSpriteDeathSheet_6
+  - first:
+      213: -4786095202782597180
+    second: TriangleSpriteDeathSheet_7
+  - first:
+      213: 3493288990296833100
+    second: TriangleSpriteDeathSheet_8
+  - first:
+      213: 5240729280220817708
+    second: TriangleSpriteDeathSheet_9
+  - first:
+      213: -4821326714596586330
+    second: TriangleSpriteDeathSheet_10
+  - first:
+      213: -7584726959703201846
+    second: TriangleSpriteDeathSheet_11
+  - first:
+      213: 7023061311603510953
+    second: TriangleSpriteDeathSheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 21
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc9c851967e67e70800000000000000
+      internalID: 9112725334549896446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 21
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f2d668c4572bf80800000000000000
+      internalID: -8092276608898093193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 21
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a009889252458c500800000000000000
+      internalID: 416675484119109642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 21
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21aa2e12ce7be9f00800000000000000
+      internalID: 1125539181697870354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 21
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4177ff6413cc9f520800000000000000
+      internalID: 2736442760620898068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 21
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f789006506ed91e00800000000000000
+      internalID: 1016087696289863807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 21
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b30039ec82b3f090800000000000000
+      internalID: -8001855794629835853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_7
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 21
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf21f855cf549db0800000000000000
+      internalID: -4786095202782597180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 21
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cfc6414d7aa7030800000000000000
+      internalID: 3493288990296833100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 21
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29ec87838fcab840800000000000000
+      internalID: 5240729280220817708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_10
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 21
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac8e56c5e4371db0800000000000000
+      internalID: -4821326714596586330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_11
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 21
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7ef880403adb690800000000000000
+      internalID: -7584726959703201846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TriangleSpriteDeathSheet_12
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 21
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae8ae99d0de67160800000000000000
+      internalID: 7023061311603510953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TriangleSpriteDeathSheet_0: 9112725334549896446
+      TriangleSpriteDeathSheet_1: -8092276608898093193
+      TriangleSpriteDeathSheet_10: -4821326714596586330
+      TriangleSpriteDeathSheet_11: -7584726959703201846
+      TriangleSpriteDeathSheet_12: 7023061311603510953
+      TriangleSpriteDeathSheet_2: 416675484119109642
+      TriangleSpriteDeathSheet_3: 1125539181697870354
+      TriangleSpriteDeathSheet_4: 2736442760620898068
+      TriangleSpriteDeathSheet_5: 1016087696289863807
+      TriangleSpriteDeathSheet_6: -8001855794629835853
+      TriangleSpriteDeathSheet_7: -4786095202782597180
+      TriangleSpriteDeathSheet_8: 3493288990296833100
+      TriangleSpriteDeathSheet_9: 5240729280220817708
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
