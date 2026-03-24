@@ -27,6 +27,7 @@ public class Exit : MonoBehaviour
                 Debug.Log("no more scenes to load");
             }
 
+            FindFirstObjectByType<ScenePersist>().ResetScenePersist();
             SceneManager.LoadScene(nextSceneIndex);
         }
     }

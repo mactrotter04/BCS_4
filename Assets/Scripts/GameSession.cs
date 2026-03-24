@@ -43,7 +43,7 @@ public class GameSession : MonoBehaviour
 
     public void processPlayerDeath()
     {
-        if (PlayerLives > 0)
+        if (PlayerLives > 1)
         {
             TakeLife();
         }
@@ -55,12 +55,14 @@ public class GameSession : MonoBehaviour
 
     void ResetGameSession()
     {
+        FindAnyObjectByType<ScenePersist>().ResetScenePersist();
         Invoke(nameof(ReloadGame), gameSessionResetDelay);
-        Destroy(gameObject);
+        
     }
 
     void ReloadGame()
     {
+        Destroy(gameObject);
         SceneManager.LoadScene(0);
     }
 
