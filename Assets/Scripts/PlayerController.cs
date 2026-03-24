@@ -75,11 +75,12 @@ public class PlayerController : MonoBehaviour
 
     void Death()
     {
-        if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enimeies")))
+        if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enimeies", "Hazards")))
         {
             isAlive = false;
             animator.SetTrigger("Death");
             rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+            FindAnyObjectByType<GameSession>().processPlayerDeath();
         }
     }
 }
