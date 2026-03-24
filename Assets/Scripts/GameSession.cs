@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,12 @@ public class GameSession : MonoBehaviour
 {
     [SerializeField] int PlayerLives = 3;
     [SerializeField] float gameSessionResetDelay = 2f;
+    
+
+    [Header ("scores")]
+    [SerializeField] TextMeshProUGUI livesText;
+    [SerializeField] TextMeshProUGUI scoreText;
+    int score = 0;
 
     void Awake()
     {
@@ -24,7 +31,8 @@ public class GameSession : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        livesText.text = PlayerLives.ToString();
+        scoreText.text = score.ToString();
     }
 
     // Update is called once per frame
@@ -61,11 +69,18 @@ public class GameSession : MonoBehaviour
     {
         PlayerLives--;
         Invoke(nameof(ReloadCurrentLevel), gameSessionResetDelay);
+        livesText.text = PlayerLives.ToString();
     }
 
     void ReloadCurrentLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void AddToScore(int pointsToAdd)
+    {
+        score += pointsToAdd;
+        scoreText.text = score.ToString();
     }
 
 }
