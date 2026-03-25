@@ -5,6 +5,8 @@ public class EnimieHealth : MonoBehaviour
 {
     [SerializeField] int enemyHealth = 100;
     int currentHealth;
+    [SerializeField] int pointsForEnemy = 50;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +36,7 @@ public class EnimieHealth : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        FindFirstObjectByType<GameSession>().AddToScore(pointsForEnemy);
     }
 
     

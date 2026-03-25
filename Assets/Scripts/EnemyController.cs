@@ -19,10 +19,13 @@ public class EnemyController : MonoBehaviour
         rb2d.linearVelocity = new Vector2(moveSpeed, 0f);
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerExit2D(Collider2D other)
     {
-        moveSpeed = -moveSpeed;
-        FilipEnemyFace();
+        if (other.CompareTag("ground"))
+        {
+            moveSpeed = -moveSpeed;
+            FilipEnemyFace();
+        }
     }
 
     void FilipEnemyFace()

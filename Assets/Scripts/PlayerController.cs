@@ -10,14 +10,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float jumpforce = 5f;
 
+    [Header("Attack")]
     [SerializeField] CapsuleCollider2D swordHitbox;
+    [SerializeField] float attackDuration = 0.2f;
+    [SerializeField] float attackCoolDown = 1f;
+
     Rigidbody2D rb2d;
     Vector2 moveInput;
     Animator animator;
     CapsuleCollider2D capsuleCollider2D;
 
+    bool isAttacking = false;
     bool playerHasHorizontalSpeed;
     bool isAlive = true;
+    float lastAttackTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +40,7 @@ public class PlayerController : MonoBehaviour
         Walk();
         FlipSprite();
         Death();
+        CheckGround();
     }
 
     void OnMove(InputValue value)
@@ -63,7 +70,7 @@ public class PlayerController : MonoBehaviour
     void OnJump(InputValue value)
     {
         if (!isAlive) return;
-        
+
         if (!capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) return;
         /*if player isnt touching ground then skip below*/
 
@@ -72,6 +79,12 @@ public class PlayerController : MonoBehaviour
             rb2d.linearVelocity += new Vector2(0f, jumpforce);
         }
         
+    }
+
+    void CheckGround()
+    {
+        bool isGrounded = capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        animator.SetBool("Jump", !isGrounded);
     }
 
     void Death()
@@ -83,15 +96,9 @@ public class PlayerController : MonoBehaviour
             rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
             FindAnyObjectByType<GameSession>().processPlayerDeath();
             enabled = false;
-            Invoke(nameof(DisableAnimator), 1.5f);
+         
         }
     }
-
-    void DisableAnimator()
-    {
-        animator.enabled = false;
-    }
-
     void Attack()
     {
         StartCoroutine(Swing());
@@ -99,14 +106,19 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Swing()
     {
+        isAttacking = true;
         swordHitbox.enabled = true;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(attackDuration);
         swordHitbox.enabled = false;
+        isAttacking = false;
     }
 
 
     void OnAttack()
     {
+        if (!isAlive) return;
+        if (Time.time < lastAttackTime + attackCoolDown) return;
+        lastAttackTime = Time.time;
         Attack();
         animator.SetTrigger("Attack");
     }
