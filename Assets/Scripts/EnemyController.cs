@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D rb2d;
+    public TextMeshPro  healthText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +27,8 @@ public class EnemyController : MonoBehaviour
 
     void FilipEnemyFace()
     {
-        transform.localScale = new Vector2(-(Mathf.Sign(rb2d.linearVelocity.x) *Mathf.Abs(transform.localScale.x)),transform.localScale.y);   
+        transform.localScale = new Vector2(-(Mathf.Sign(rb2d.linearVelocity.x) *Mathf.Abs(transform.localScale.x)),transform.localScale.y);
+        healthText.transform.localScale = new Vector2(-(Mathf.Sign(rb2d.linearVelocity.x) * Mathf.Abs(transform.localScale.x)), transform.localScale.y);
     }
+
 }

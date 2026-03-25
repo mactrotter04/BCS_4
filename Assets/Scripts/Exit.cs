@@ -17,7 +17,8 @@ public class Exit : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        extractionTimerText.gameObject.SetActive(false);
+        extractionTimerText.text = "Extraction in: " + exitTime.ToString();
     }
 
     // Update is called once per frame
@@ -31,11 +32,10 @@ public class Exit : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             InsideExit = true;
-
+            extractionTimerText.gameObject.SetActive(true);
             if (extractionCoroutine == null)
             {
                 extractionCoroutine = StartCoroutine(updateTimer());
-                extractionCoroutine = null;
             }
 
             currentTime = exitTime;
@@ -49,12 +49,16 @@ public class Exit : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             InsideExit = false;
-
+            extractionTimerText.gameObject.SetActive(false);
             if (extractionCoroutine != null)
             {
                 StopCoroutine(updateTimer());
                 extractionCoroutine = null;
             }
+
+
+            currentTime = exitTime;
+            UpdateTimerText();
         }
     }
 
@@ -80,7 +84,7 @@ public class Exit : MonoBehaviour
 
         while (currentTime > 0f) //while (true)
         {
-            if(InsideExit)
+            if(!InsideExit)
             {
                 yield break;
             }
@@ -102,7 +106,7 @@ public class Exit : MonoBehaviour
 
     void UpdateTimerText()
     {
-        extractionTimerText.text = "Extraction in: " + currentTime.ToString();
+        extractionTimerText.text = "Extraction in: " + Mathf.CeilToInt (currentTime).ToString();
     }
 
 }

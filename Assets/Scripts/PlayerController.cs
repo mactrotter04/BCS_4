@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.Properties;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float jumpforce = 5f;
 
-
+    [SerializeField] CapsuleCollider2D swordHitbox;
     Rigidbody2D rb2d;
     Vector2 moveInput;
     Animator animator;
@@ -81,6 +82,44 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Death");
             rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
             FindAnyObjectByType<GameSession>().processPlayerDeath();
+            enabled = false;
+            Invoke(nameof(DisableAnimator), 1.5f);
         }
     }
+
+    void DisableAnimator()
+    {
+        animator.enabled = false;
+    }
+
+    void Attack()
+    {
+        StartCoroutine(Swing());
+    }
+
+    IEnumerator Swing()
+    {
+        swordHitbox.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        swordHitbox.enabled = false;
+    }
+
+
+    void OnAttack()
+    {
+        Attack();
+        animator.SetTrigger("Attack");
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        EnimieHealth enemy = other.GetComponent<EnimieHealth>();
+
+        if (enemy != null)
+        {
+            enemy.TakeDamage(50);
+        }
+    }
+
+
 }
