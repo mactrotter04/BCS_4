@@ -659,6 +659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736863459655849181, guid: 0a57cda72bdf4504eb8032a112976bd1, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27326,6 +27330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736863459655849181, guid: 0a57cda72bdf4504eb8032a112976bd1, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28166,6 +28174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8736863459655849181, guid: 0a57cda72bdf4504eb8032a112976bd1, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28327,6 +28339,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1913003489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2248289117394522303, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
+  m_PrefabInstance: {fileID: 2966736891053808266}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1967879995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28382,6 +28405,10 @@ PrefabInstance:
     - target: {fileID: 5767138806436648317, guid: 0a57cda72bdf4504eb8032a112976bd1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736863459655849181, guid: 0a57cda72bdf4504eb8032a112976bd1, type: 3}
+      propertyPath: damage
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28798,9 +28825,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSession
       objectReference: {fileID: 0}
+    - target: {fileID: 2248289117394522303, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
+      propertyPath: m_text
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408408271539123497, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
+      propertyPath: m_Name
+      value: HPText
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281456532022487681, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
+      propertyPath: HPText
+      value: 
+      objectReference: {fileID: 1913003489}
     - target: {fileID: 4281456532022487681, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
       propertyPath: PlayerLives
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665893253864520200, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
+      propertyPath: m_Name
+      value: HeartImage
       objectReference: {fileID: 0}
     - target: {fileID: 6832204218486884243, guid: 22d07b7a9176afc4db457507721635e1, type: 3}
       propertyPath: m_LocalPosition.x

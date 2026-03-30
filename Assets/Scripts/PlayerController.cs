@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     CapsuleCollider2D capsuleCollider2D;
 
-    bool isAttacking = false;
+    public bool isAttacking = false;
     bool playerHasHorizontalSpeed;
     bool isAlive = true;
     float lastAttackTime;
@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        swordHitbox.enabled = false;
     }
 
     // Update is called once per frame
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
         if (!isAlive) return;
         Walk();
         FlipSprite();
-        PlayerDeath();
+        //PlayerDeath();
         CheckGround();
     }
 
@@ -89,15 +90,11 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerDeath()
     {
-        if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enimeies", "Hazards")))
-        {
-            isAlive = false;
-            animator.SetTrigger("Death");
-            rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-            FindAnyObjectByType<GameSession>().processPlayerDeath();
-            enabled = false;
-         
-        }
+        isAlive = false;
+        animator.SetTrigger("Death");
+        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+        FindAnyObjectByType<GameSession>().processPlayerDeath();
+        enabled = false;
     }
     void Attack()
     {
@@ -122,16 +119,4 @@ public class PlayerController : MonoBehaviour
         Attack();
         animator.SetTrigger("Attack");
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Health enemy = other.GetComponent<Health>();
-
-        if (enemy != null)
-        {
-            enemy.TakeDamage(50);
-        }
-    }
-
-
 }

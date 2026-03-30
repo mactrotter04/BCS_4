@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class DamageDealer : MonoBehaviour
 {
     [SerializeField] int damage = 10;
 

@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 7403294972753717828}
   - component: {fileID: 7245564446600970503}
   - component: {fileID: 3409131605170301205}
-  - component: {fileID: 1105409496153692262}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -245,20 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 100
-  points: 20
---- !u!114 &1105409496153692262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5052518230025879325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c2d862e069afd46bfa40fbace37800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Damage
-  damage: 50
+  points: 0
 --- !u!1 &6959426251822025327
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,9 +255,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7558713434142421624}
   - component: {fileID: 6273760184741713178}
+  - component: {fileID: 4448587562038255777}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,3 +315,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0.02, y: -8.3801843e-10}
   m_Size: {x: 0.34, y: 0.04}
   m_Direction: 1
+--- !u!114 &4448587562038255777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6959426251822025327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c2d862e069afd46bfa40fbace37800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damage: 50

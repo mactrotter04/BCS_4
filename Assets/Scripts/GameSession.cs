@@ -9,10 +9,11 @@ public class GameSession : MonoBehaviour
     
 
     [Header ("scores")]
-    [SerializeField] TextMeshProUGUI livesText;
+    public TextMeshProUGUI HPText;
     [SerializeField] TextMeshProUGUI scoreText;
     int score = 0;
     PlayerController playerController;
+
     void Awake()
     {
         //singleton pattern 
@@ -31,7 +32,7 @@ public class GameSession : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        livesText.text = PlayerHP.ToString();
+        HPText.text = PlayerHP.ToString();
         scoreText.text = score.ToString();
         playerController = FindFirstObjectByType<PlayerController>();
     }
@@ -44,7 +45,7 @@ public class GameSession : MonoBehaviour
 
     public void processPlayerDeath()
     {
-        if (playerController.GetComponent<Health>().GetHealth() => 0)
+        if (playerController.GetComponent<Health>().GetHealth() <= 0)
         {
             Invoke(nameof(ReloadCurrentLevel), gameSessionResetDelay);
         }
