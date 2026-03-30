@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] int PlayerLives = 3;
+    [SerializeField] int PlayerHP = 100;
     [SerializeField] float gameSessionResetDelay = 2f;
     
 
@@ -12,7 +12,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
     int score = 0;
-
+    PlayerController playerController;
     void Awake()
     {
         //singleton pattern 
@@ -31,8 +31,9 @@ public class GameSession : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        livesText.text = PlayerLives.ToString();
+        livesText.text = PlayerHP.ToString();
         scoreText.text = score.ToString();
+        playerController = FindFirstObjectByType<PlayerController>();
     }
 
     // Update is called once per frame
@@ -43,9 +44,9 @@ public class GameSession : MonoBehaviour
 
     public void processPlayerDeath()
     {
-        if (PlayerLives > 1)
+        if (playerController.GetComponent<Health>().GetHealth() => 0)
         {
-            TakeLife();
+            Invoke(nameof(ReloadCurrentLevel), gameSessionResetDelay);
         }
         else
         {
@@ -67,12 +68,10 @@ public class GameSession : MonoBehaviour
     }
 
 
-    void TakeLife()
-    {
-        PlayerLives--;
-        Invoke(nameof(ReloadCurrentLevel), gameSessionResetDelay);
-        livesText.text = PlayerLives.ToString();
-    }
+   
+        
+        
+    
 
     void ReloadCurrentLevel()
     {

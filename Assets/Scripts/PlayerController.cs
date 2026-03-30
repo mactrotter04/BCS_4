@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         if (!isAlive) return;
         Walk();
         FlipSprite();
-        Death();
+        PlayerDeath();
         CheckGround();
     }
 
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Jump", !isGrounded);
     }
 
-    void Death()
+    public void PlayerDeath()
     {
         if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enimeies", "Hazards")))
         {
@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        EnimieHealth enemy = other.GetComponent<EnimieHealth>();
+        Health enemy = other.GetComponent<Health>();
 
         if (enemy != null)
         {
