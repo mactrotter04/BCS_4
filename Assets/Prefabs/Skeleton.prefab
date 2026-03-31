@@ -248,7 +248,7 @@ MonoBehaviour:
   healthText: {fileID: 1822256836340433685}
   moveSpeed: 1
   chaseSpeed: 2
-  attackRange: 3
+  attackRange: 1
   attackCooldown: 1
   reactDelay: 0.5
 --- !u!58 &5182312362924002773
